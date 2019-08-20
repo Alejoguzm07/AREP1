@@ -8,6 +8,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "calculando la desviacion" );
+    	LinkedList a = new LinkedList();
+    	a.addAtHead(9);
+    	a.addAtHead(8);
+    	a.addAtHead(7);
+    	System.out.println(a.pop().getValor());
+    	System.out.println(a.pop().getValor());
+    	System.out.println(a.pop().getValor());
     }
 }
