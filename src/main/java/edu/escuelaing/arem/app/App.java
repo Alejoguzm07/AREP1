@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem.app;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

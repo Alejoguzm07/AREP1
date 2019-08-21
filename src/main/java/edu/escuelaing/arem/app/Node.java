@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem.app;
 
 /**
  * Esta clase implementa cada nodo de una linked list

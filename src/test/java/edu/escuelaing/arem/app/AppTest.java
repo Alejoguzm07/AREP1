@@ -1,4 +1,4 @@
-package edu.escuelaing.arem.ASE.app;
+package edu.escuelaing.arem.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
