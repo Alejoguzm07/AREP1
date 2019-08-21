@@ -1,5 +1,9 @@
 package edu.escuelaing.arem.ASE.app;
 
+/**
+ * Esta clase implementa una liked list con sus funciones basicas
+ *
+ */
 public class LinkedList {
 	private int length;
 	private Node head;
@@ -9,7 +13,11 @@ public class LinkedList {
 		head = null;
 	}
 	
-	public void addAtHead(Object val)
+	/**
+	 * ingresa un valor a la cabeza de la lista
+	 * @param val el entero a ingresar a la lista
+	 */
+	public void addAtHead(int val)
 	{
 		if(head != null) {
 			Node temp = head;
@@ -21,7 +29,11 @@ public class LinkedList {
 		length++;
 	}
 	
-	public void addAtTail(Object val)
+	/**
+	 * ingresa un valor a la cola de la lista
+	 * @param val el entero a ingresar a la lista
+	 */
+	public void addAtTail(int val)
 	{
 		if(head != null) {
 			Node temp = head;
@@ -36,6 +48,10 @@ public class LinkedList {
 		length++;
 	}
 	
+	/**
+	 * remueve un valor a la cabeza de la lista
+	 * @return el nodo a extrer
+	 */
 	public Node pop() {
 		Node temp = head;
 		head = head.getNext();
@@ -43,6 +59,10 @@ public class LinkedList {
 		
 	}
 	
+	/**
+	 * devuelve el valor del nodo
+	 * @return un entero con el valor del nodo
+	 */
 	public int getLength() {
 		return length;
 	}
