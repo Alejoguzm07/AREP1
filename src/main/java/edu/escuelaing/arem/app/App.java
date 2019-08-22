@@ -18,7 +18,7 @@ public class App {
         while((str = br.readLine()) != null) {
         	Integer val = Integer.parseInt(str);
 			a.addAtHead(val);
-			b.addAtHead(val);
+			b.addAtTail(val);
 		}
 		double media = calcMedia(a);
 		double desviacion = calcDesv(b,media);
@@ -32,8 +32,8 @@ public class App {
 	 * @return un real con la media de la lista de valores
 	 */
 	public static double calcMedia(LinkedList lis){
-		int suma = 0;
-		int lon = lis.getLength();
+		double suma = 0;
+		double lon = lis.getLength();
 		for(int i = 0; i < lon; i++){
 			suma += lis.pop().getValor();
 		}
@@ -51,10 +51,10 @@ public class App {
 		int suma = 0;
 		int lon = lis.getLength();
 		for(int i = 0; i < lon; i++){
-			int valor = lis.pop().getValor();
+			double valor = lis.pop().getValor();
 			suma += Math.pow((valor - med), 2);
 		}
-		double desvia = Math.pow((suma / (lon - 1)), (1/2));
+		double desvia = Math.pow((suma / (double)(lon - 1)), 0.5);
 		return desvia;
 	}
 }

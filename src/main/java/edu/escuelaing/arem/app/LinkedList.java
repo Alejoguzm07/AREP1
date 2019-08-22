@@ -17,7 +17,7 @@ public class LinkedList {
 	 * ingresa un valor a la cabeza de la lista
 	 * @param val el entero a ingresar a la lista
 	 */
-	public void addAtHead(int val)
+	public void addAtHead(double val)
 	{
 		if(head != null) {
 			Node temp = head;
@@ -33,7 +33,7 @@ public class LinkedList {
 	 * ingresa un valor a la cola de la lista
 	 * @param val el entero a ingresar a la lista
 	 */
-	public void addAtTail(int val)
+	public void addAtTail(double val)
 	{
 		if(head != null) {
 			Node temp = head;

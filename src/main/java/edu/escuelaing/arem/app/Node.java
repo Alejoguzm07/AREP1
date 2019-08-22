@@ -8,9 +8,9 @@ package edu.escuelaing.arem.app;
 public class Node
 {
 	private Node next;
-	private int valor;
+	private double valor;
 	
-	public Node(int val)
+	public Node(double val)
 	{
 		valor = val;
 	}
@@ -19,14 +19,14 @@ public class Node
 	 * devuelve el valor contenido en el nodo
 	 * @return un entero con el valor del nodo
 	 */
-	public int getValor()
+	public double getValor()
 	{
 		return valor;
 	}
 	
 	/**
 	 * asigna como siguiente a un nodo
-	 * @param un nodo
+	 * @param n nodo siguiene
 	 */
 	public void setNext(Node n) {
 		next = n;
