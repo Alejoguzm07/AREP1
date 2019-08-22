@@ -16,7 +16,7 @@ public class App {
     	BufferedReader br = new BufferedReader(new FileReader("test.txt"));
         String str = null;
         while((str = br.readLine()) != null) {
-        	Integer val = Integer.parseInt(str);
+        	double val = Double.parseDouble(str);
 			a.addAtHead(val);
 			b.addAtTail(val);
 		}
