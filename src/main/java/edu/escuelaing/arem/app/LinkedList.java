@@ -55,6 +55,7 @@ public class LinkedList {
 	public Node pop() {
 		Node temp = head;
 		head = head.getNext();
+		length--;
 		return temp;
 		
 	}
