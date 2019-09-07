@@ -22,7 +22,7 @@ public class App {
 		}
 		double media = calcMedia(a);
 		double desviacion = calcDesv(b,media);
-		System.out.println("La media es " + media + " la desviación es " + desviacion);
+		System.out.println("La media es " + media + " la desviacion es " + desviacion);
 	}
 	
 	/**
